@@ -4,7 +4,12 @@
     {
         public int OddOccurrence(int[] a)
         {
-            return 3;
+            var result = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                result = result ^ a[i]; //XOR
+            }
+            return result;
         }
     }
 }
